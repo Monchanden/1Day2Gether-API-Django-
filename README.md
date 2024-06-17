@@ -1,10 +1,11 @@
 # 1Day2Gether-API-Django-
-cd Scripts
-activate
+open cmd in the folder
+- cd Scripts
+- activate
 
-cd..
-cd final
-pip install django
-pip install django-ckeditor
-py manage.py runserver
+- cd..
+- cd final
+- pip install django
+- pip install django-ckeditor
+- py manage.py runserver
 
