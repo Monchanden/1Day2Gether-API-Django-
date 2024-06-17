@@ -3,7 +3,6 @@
 {% block main_body %}
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -145,21 +144,17 @@
 
         }
     </style>
-
 </head>
-
 <body>
-
-
     <div id="slider">
         <div class="slides">
-            <img src="{%static 'img/homepage1.jpg'%}" alt="">
+            <img src="{%static 'image/homepage1.jpg'%}" alt="">
         </div>
         <div class="slides">
-            <img src="{%static 'img/homepage2.jpg'%}" alt="">
+            <img src="{%static 'image/homepage2.jpg'%}" alt="">
         </div>
         <div class="slides">
-            <img src="{%static 'img/homepage3.jpg'%}" alt="">
+            <img src="{%static 'image/homepage3.jpg'%}" alt="">
         </div>
 
         <div class="infor">
@@ -195,7 +190,7 @@
             </center>
         </div>
         <div class="info-img">
-            <img loading="lazy" class="classA" src="{%static 'img/camp3.jpg'%}" alt="">
+            <img loading="lazy" class="classA" src="{%static 'image/camp3.jpg'%}" alt="">
 
         </div>
     </div>
@@ -336,7 +331,7 @@
     <div style="width: 100%;">
     </div>
     <div class="footer1">
-        <img loading="lazy" src="{%static 'img/foot3.png'%}" alt="">
+        <img loading="lazy" src="{%static 'image/foot3.png'%}" alt="">
 
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -354,21 +349,15 @@
             if (index > slides.length - 1) {
                 index = 0;
             }
-
             for (let i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";
                 dot[i].classList.remove("active");
             }
-
             slides[index].style.display = "block";
             dot[index].classList.add("active");
-
             index++;
-
             setTimeout(changeSlide, 5000);
-
         }
-
         changeSlide();
     </script>
 
